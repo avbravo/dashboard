@@ -24,14 +24,14 @@
             }
         </style>
         <style type="text/css">
-    .ui-panelgrid.showcase-text-align-center .ui-grid-responsive .ui-panelgrid-cell {
-        text-align: center;
-    }
+            .ui-panelgrid.showcase-text-align-center .ui-grid-responsive .ui-panelgrid-cell {
+                text-align: center;
+            }
 
-    .customPanelGrid .ui-panelgrid-content {
-        align-items: center;
-    }
-</style>
+            .customPanelGrid .ui-panelgrid-content {
+                align-items: center;
+            }
+        </style>
 
         <f:facet name="first">
 
@@ -59,15 +59,18 @@
 
             <div id="layoutSidenav">
                 <ui:include src="/WEB-INF/layout/navigator.xhtml" />
+                <h:form id="templateform">
 
-                <div id="layoutSidenav_content">
-                    <main>
-                        <div class="container-fluid px-4">
-                            <ui:insert name="contenido" />
-                        </div>
-                    </main>                    
-              <ui:include src="/WEB-INF/layout/footer.xhtml" />                  
-                </div>
+
+                    <div id="layoutSidenav_content">
+                        <main>
+                            <div class="container-fluid px-4">
+                                <ui:insert name="contenido" />
+                            </div>
+                        </main>                    
+                        <ui:include src="/WEB-INF/layout/footer.xhtml" />                  
+                    </div>
+                </h:form>
             </div>
 
         </f:view>
