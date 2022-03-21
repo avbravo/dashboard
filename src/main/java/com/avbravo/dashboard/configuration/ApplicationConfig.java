@@ -4,8 +4,9 @@
  */
 package com.avbravo.dashboard.configuration;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.faces.annotation.FacesConfig;
-import jakarta.faces.bean.ApplicationScoped;
+//import jakarta.faces.bean.ApplicationScoped;
 
 /**
  *
